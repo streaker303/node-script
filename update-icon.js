@@ -40,6 +40,8 @@ const getIconUrl = () => {
         iconfontConfig.path = '/t/' + result.data?.js_file + '.js';
         console.log(iconfontConfig.path, '更新地址')
         downloadIconfont()
+      } else {
+        console.log('获取iconfont地址失败，请替换Cookie和ctoken后重新尝试')
       }
     });
   })
